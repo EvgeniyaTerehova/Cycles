@@ -84,6 +84,7 @@ public class Main {
             amountOfSavingsWithProcent = amountOfSavingsWithProcent + contribution;
             System.out.println("Месяц" + i + ", сумма накоплений равна" + amountOfSavingsWithProcent + "рублей");
         }
+
     }
 
     public static void task10() {
