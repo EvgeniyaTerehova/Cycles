@@ -9,6 +9,7 @@ public class Main {
         task6();
         task7();
         task8();
+      C2
 
     }
 
@@ -22,11 +23,11 @@ public class Main {
 
     public static void task1() {
         System.out.println("задача 1");
-        int Accumulation = 0;
+        int accumulation = 0;
         int month = 1;
-        while (Accumulation < 2_459_000) {
-            Accumulation += 15_000;
-            System.out.println("Месяц" + month + ", сумма накоплений равна" + Accumulation + "рублей");
+        while (accumulation < 2_459_000) {
+            accumulation += 15_000;
+            System.out.println("Месяц" + month + ", сумма накоплений равна" + accumulation + "рублей");
             month++;
         }
     }
@@ -127,10 +128,57 @@ public class Main {
             contribution *= 1 + 0.07 * 6;
 
                 System.out.printf("Месяц %d, Итого %d \n", i, contribution - previousAmount);
+=======
+        task9();
+        task10();
+
+
+    }
+
+    public static void task1() {
+        System.out.println("задача 1");
+        for (int i = 1; i < 10; i = i + 1) {
+            System.out.println(i);
+        }
+    }
+
+    public static void task2() {
+        System.out.println("задача 2");
+        for (int i = 10; i > 1; i = i - 1) {
+            System.out.println(i);
+        }
+    }
+
+    public static void task3() {
+        System.out.println("задача 3");
+        for (int i = 0; i < 17; i = i + 2) {
+            System.out.println(i);
+        }
+    }
+
+    public static void task4() {
+        System.out.println("задача 4");
+        for (int i = 10; i > -10; i = i - 1) {
+            System.out.println(i);
+        }
+    }
+
+    public static void task5() {
+        System.out.println("задача 5");
+        for (int i = 1904; i < 2096; i = i + 4) {
+            System.out.println(i + "год является високосным");
+        }
+    }
+
+    public static void task6() {
+        System.out.println("задача 6");
+        for (int i = 7; i <= 98; i = i + 7) {
+            System.out.print(i + " ");
+master
         }
         System.out.println();
     }
-
+ C2
     /**
      * Нужно написать программу, которая считает дни месяца по датам, определяет, какой день пятница, и выводит
      * сообщение с напоминанием, что нужно подготовить еженедельный отчет.
@@ -150,6 +198,45 @@ public class Main {
             System.out.println("Сегодня пятница," + i + "-е число. Необходимо подготовить отчет");
         }
     }
+    public static void task7() {
+        System.out.println("задача 7");
+        for (int i = 1; i <= 512; i = i * 2) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
+
+    public static void task8() {
+        System.out.println("задача 8");
+        int contribution = 29_000;
+        int amountOfSavings = 0;
+        for (int i = 1; i <= 12; i = i + 1) {
+            amountOfSavings = amountOfSavings + contribution;
+            System.out.println("Месяц" + i + ", сумма накоплений равна" + amountOfSavings + "рублей");
+        }
+    }
+
+    public static void task9() {
+        System.out.println("задача 9");
+        int contribution = 29_000;
+        double amountOfSavingsWithProcent = 0;
+        for (int i = 0; i <= 12; i = i + 1) {
+            amountOfSavingsWithProcent = amountOfSavingsWithProcent + amountOfSavingsWithProcent / 100;
+            amountOfSavingsWithProcent = amountOfSavingsWithProcent + contribution;
+            System.out.println("Месяц" + i + ", сумма накоплений равна" + amountOfSavingsWithProcent + "рублей");
+        }
+
+    }
+
+    public static void task10() {
+        System.out.println("задача 10");
+        int N = 2;
+        for (int i = 1; i <= 10; i = i + 1) {
+            System.out.println(N + " * " + i + " = "
+                    + N * i);
+        }
+
+master
 
     /**
      * Нам нужно написать астрономическое приложение, которое считает, когда над Землей пролетает комета.
